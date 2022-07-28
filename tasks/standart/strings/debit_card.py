@@ -13,12 +13,16 @@ def hide_debit_numbers(card_number: str) -> str:
     :param card_number: номер карты 16 цифр
     :return: номер карты, вида 1111********1111
     """
+    str(c_numb)
+    result = f"{c_numb[0]} {c_numb[1]} {c_numb[2]} {c_numb[3]} {'********'} {c_numb[12]} {c_numb[13]} {c_numb[14]} {c_numb[15]}"
+    return result
 
-    return None
 
 
 if __name__ == '__main__':
     c_numb = input("Введите номер карты 16 цифр: ")
-    if len(c_numb) != 16 or not c_numb.isdigit():
-        raise ValueError("Некорректный номер карты")
-    print(hide_debit_numbers(c_numb))
+    if len(c_numb) == 16 and c_numb.isdigit():
+        print(hide_debit_numbers(c_numb))
+    print("Некорректный номер карты")
+
+

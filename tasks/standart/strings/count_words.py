@@ -20,6 +20,10 @@ def count_words(str_to_count: str) -> int:
 
     :return: количество слов в строке
     """
+    result = string.count(" ")
+    result_1 = (result)+1
+    return result_1
+
 
     return None
 

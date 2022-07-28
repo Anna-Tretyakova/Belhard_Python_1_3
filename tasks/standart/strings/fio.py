@@ -19,11 +19,11 @@ def generate_fio(surname: str, name: str, patronymic: str) -> str:
     :param surname: фамилия
     :param name: имя
     :param patronymic: отчество
+    :return: Фамилия И.О."""
 
-    :return: Фамилия И.О.
-    """
+    result = s + " " + n[0] + "." + p[0]
+    return(result)
 
-    return None
 
 
 if __name__ == '__main__':
@@ -31,3 +31,4 @@ if __name__ == '__main__':
     n = input('Введите Имя: ')
     p = input('Введите Отчество: ')
     print(f'Результат: {generate_fio(s, n, p)}')
+
