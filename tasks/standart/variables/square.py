@@ -25,10 +25,13 @@ def square(side: str) -> tuple:
     :rtype: tuple
     """
 
-
-    return None
+    a = int(side) * 4
+    b = int(side) ** 2
+    c = int(side) * sqrt(2)
+    d = (a, b, c)
+    return d
 
 
 if __name__ == '__main__':
-    side_val = input('Введите сторону квадрата: ')
-    print(f'(Периметр, Площадь, Диагональ): {square(side_val)}')
+    side = input('Введите сторону квадрата: ')
+    print(f'(Периметр, Площадь, Диагональ): {square(side)}')

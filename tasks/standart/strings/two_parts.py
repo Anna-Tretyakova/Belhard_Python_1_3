@@ -4,11 +4,9 @@
 На вход получаем строку, нужно разрезать ее на 2 равные части и вернуть их
 по отдельности. Если длина строки - нечетное число,
 то первая часть должна быть меньше на 1 символ
-
 Задачу можно решить 2 способами:
     - используя math
     - используя операторы
-
 ПРИМЕРЫ
 --------------------------------------------------------------------------------
 - 'hello world' -> ('Hello ', 'world')
@@ -21,17 +19,13 @@ from math import floor
 def split_to_parts(str_to_split: str) -> tuple:
     """Разделяет строку на 2 части. Если длина строки нечетная, то первая часть
     на один символ больше
-
     :param str_to_split: строка для разделения
-
     :return: кортеж с двумя частями
     """
 
-     part_1 = str_to_split[0:floor(len(str_to_split)/2)]
-     part_2 = str_to_split[floor(len(str_to_split))/2):0)]
-     return (part_1, part_2)
-
-    return None
+    part_1 = string[0:floor(len(string)/2)]
+    part_2 = string[floor(len(string)/2):len(string)]
+    return (part_1, part_2)
 
 
 if __name__ == '__main__':

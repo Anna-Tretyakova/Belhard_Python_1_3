@@ -23,7 +23,7 @@ def shortener(text):
     c = list(string)
     while "(" in c == True:
         s1 = c.index("(")
-        while c[s1]!=")":
+        while c[s1] != ")":
             c.pop(s1)
     c.remove(")")
     f = ' '.join(c)

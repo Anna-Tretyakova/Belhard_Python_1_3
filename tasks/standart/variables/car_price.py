@@ -22,7 +22,7 @@ AGENCY_FEE = 500
 DELIVERY_PRICE = 100
 
 
-def car_price(price: float) -> float:
+def car_price(pricе: float) -> float:
     """Возвращает стоимость автомобиля с наценками
 
     :param price: стоимость автомобиля без наценок
@@ -30,9 +30,9 @@ def car_price(price: float) -> float:
     :return: Стоимость автомобиля с наценками
     """
 
-    return None
-
+    a = price * (1 + TAX/100 + REGISTRATION_FEE/100) + 500 + 100
+    return a
 
 if __name__ == '__main__':
-    price_val = float(input('Введите стоимость автомобиля: '))
-    print(f'Стоимость с наценками: {car_price(price_val)}')
+    price = float(input('Введите стоимость автомобиля: '))
+    print(f'Стоимость с наценками: {car_price(price)}')

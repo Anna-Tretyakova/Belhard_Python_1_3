@@ -10,8 +10,9 @@
 triangle(3, 4) -> (5, 12, 6)
 """
 
+import math
 
-def triangle(side_1: int, side_2: int) -> tuple:
+def triangle(side1: int, side2: int) -> tuple:
     """
     Рассчитывает гипотенузу, периметр и площадь
 
@@ -24,11 +25,15 @@ def triangle(side_1: int, side_2: int) -> tuple:
     :return: кортеж с параметрами
     :rtype: tuple
     """
-
-    return None
+    a = str(side1 + side2 + (math.sqrt(side1 ** 2 + side2 ** 2)))
+    b = str(side1 * side2)
+    c = str(math.sqrt(side1 ** 2 + side2 ** 2))
+    e = (a,b,c)
+    f = tuple(e)
+    return f
 
 
 if __name__ == '__main__':
-    side1_val = int(input('Введите длину первого катета: '))
-    side2_val = int(input('Введите длину второго катета: '))
-    print(f'(Гипотенуза, Периметр, Площадь): {triangle(side1_val, side2_val)}')
+    side1 = int(input('Введите длину первого катета: '))
+    side2 = int(input('Введите длину второго катета: '))
+    print(f'(Гипотенуза, Периметр, Площадь): {triangle(side1, side2)}')

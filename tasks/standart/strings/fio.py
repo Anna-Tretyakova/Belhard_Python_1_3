@@ -21,8 +21,8 @@ def generate_fio(surname: str, name: str, patronymic: str) -> str:
     :param patronymic: отчество
     :return: Фамилия И.О."""
 
-    result = s + " " + n[0] + "." + p[0]
-    return(result)
+    result = s + " " + n[0] + "." + p[0] + "."
+    return (result)
 
 
 

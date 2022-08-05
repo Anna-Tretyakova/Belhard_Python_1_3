@@ -14,18 +14,15 @@
 
 
 def count_words(str_to_count: str) -> int:
+
     """Считает количество слов в строке
 
     :param str_to_count: строка для подсчета слов
 
     :return: количество слов в строке
     """
-    result = string.count(" ")
-    result_1 = (result)+1
-    return result_1
-
-
-    return None
+    result_1 = (len(string.split()))
+    return (result_1)
 
 
 if __name__ == '__main__':

@@ -33,9 +33,15 @@ def print_recipe() -> str:
     :return: отформатированная строка
     :rtype: str
     """
+    a = len(string.split())
+    result_1 = string.split()
+    result_2 = str(result_1[1])
+    result_3 = result_2.upper()
+    result_4 = str(result_1[2:int(a)])
 
-    return None
+    return (f'TITLE = {result_3}  RECIPE = {result_4}')
 
 
 if __name__ == '__main__':
+    string = input('Введите рецепт: ')
     print(print_recipe())
